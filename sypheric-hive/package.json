@@ -1,0 +1,14 @@
+{
+  "name": "sypheric-hive-storefront",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "npx wrangler pages dev dist",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=sypheric-hive"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
